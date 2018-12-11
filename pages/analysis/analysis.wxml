@@ -1,0 +1,25 @@
+<image src='{{sys_rectangle}}' class='bg'></image>
+<view class="main">
+  <view class="areaTop">
+    <view class="first">
+      <view class="avatar">
+      </view>
+    </view>
+  </view>
+
+  <view class="areaMid">
+    <view class="topic">
+      <view class="title">
+       答案解析
+      </view>
+      <view class="content">
+       {{analysis}}
+      </view>
+      <view class="option-content">
+        
+      </view>
+    </view>
+  </view>
+ 
+</view>
+

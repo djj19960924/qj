@@ -1,0 +1,12 @@
+<image src='{{sys_rectangle}}' class='bg'></image>
+<view class="content-item">
+  <view class='titleContainer'>
+    <!-- 倒计时 -->
+    <view class='knowlegePoint'>
+    恭喜您获得<text style='color:red'>{{score}}</text>元课程奖学金,可抵《服饰搭配顾问》专业课程费用
+    </view>
+    <button class='button' bindtap='back'>确定</button>
+  </view>
+
+
+</view>

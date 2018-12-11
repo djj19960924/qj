@@ -1,0 +1,185 @@
+/* pages/PK/pk.wxss */
+page {
+  margin: 0;
+  padding: 0;
+}
+
+.bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1
+}
+.content-item {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.item-image {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.vs {
+  width: 100%;
+  height: 400rpx;
+  position: absolute;
+  display: flex;
+}
+
+.A {
+  position: absolute;
+  display: flex;
+  width: 30%;
+  height: 12%;
+  justify-content: flex-start;
+  margin-top: 120rpx;
+}
+
+.nameA {
+  position: absolute;
+  margin-left: 75rpx;
+  margin-top: 260rpx;
+  color: white;
+  font-size: 32rpx;
+}
+
+.nameB {
+  position: absolute;
+  margin-left: 563rpx;
+  margin-top: 260rpx;
+  color: white;
+  font-size: 32rpx;
+}
+
+.B {
+  position: absolute;
+  display: flex;
+  width: 30%;
+  height: 12%;
+  margin-top: 120rpx;
+  margin-left: 550rpx;
+}
+
+.vs2 {
+  position: absolute;
+  display: flex;
+  width: 15%;
+  height: 8%;
+  margin-left: 330rpx;
+  margin-top: 160rpx;
+}
+
+.tiao {
+  display: flex;
+  position: absolute;
+  width: 80rpx;
+  height: 70rpx;
+  margin-top: 330rpx;
+}
+
+.ding {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 80rpx;
+  justify-content: flex-end;
+  margin-top: -10rpx;
+}
+
+.question {
+  display: flex;
+  position: relative;
+  width: 96%;
+  height: 600rpx;
+  margin-left: 2%;
+  margin-top: -800rpx;
+  border-radius: 10rpx;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.timu {
+  display: flex;
+  position: absolute;
+}
+
+.userimage {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.titleContainer {
+  margin-top: 400rpx;
+  position: absolute;
+  width: 94%;
+  margin-left: 3%;
+  height: 760rpx;
+  border: 1px solid #afa8eb;
+  border-radius: 20rpx;
+  display: flex;
+  flex-direction: column;
+  background: #472572;
+  justify-content: center;
+}
+
+.Time {
+  height: 300rpx;
+  width: 300rpx;
+  margin-left: 190rpx;
+  margin-top: 20rpx;
+}
+
+.TimeNumber {
+  position: absolute;
+  margin-left: 290rpx;
+  margin-top: 80rpx;
+  font: 100 100rpx "Comic Sans MS";
+  color: #f4e335;
+  text-shadow: 0 0 20px #f4e335;
+}
+
+.TimeNumber2 {
+  position: absolute;
+  margin-left: 315rpx;
+  margin-top: 80rpx;
+  font: 100 100rpx "Comic Sans MS";
+  color: #f4e335;
+  text-shadow: 0 0 20px #f4e335;
+}
+
+.title {
+  font-size: 22px;
+  text-align: center;
+  color: #fff;
+}
+
+.knowlege {
+  margin-top: -10rpx;
+}
+
+.knowlegePoint {
+  font-size: 13px;
+  text-indent: 10px;
+  margin-top: 18rpx;
+  letter-spacing: 5rpx;
+  color: #bdb9b0;
+  padding-left: 5rpx;
+}
+
+page {
+  height: 100%;
+}

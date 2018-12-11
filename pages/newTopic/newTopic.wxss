@@ -1,0 +1,183 @@
+/* pages/PK/pk.wxss */
+page {
+  margin: 0;
+  padding: 0;
+}
+
+.bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1
+}
+button {
+  background: none;
+  border: none;  
+}
+button:after {
+  border: none;
+}
+.main {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.areaTop{
+  /* border: 1px solid red; */
+  width: 100%;
+}
+.areaMid{
+  /* border: 1px solid red; */
+  width: 100%;
+}
+.areaBottom{
+  /* border: 1px solid red; */
+  width: 100%;
+}
+.first{
+  /* border: 1px solid red; */
+  margin-left: 5%;
+  margin-top: 3%;
+  width: 90%;
+  display: flex;
+}
+.avatar{
+  flex:1;
+  /* border:1px solid red; */
+  
+}
+.img1{
+  position: relative;
+  margin: 20rpx auto;
+  width: 60%;
+  height: 0;
+  padding-top: 60%;
+  border-radius:50%;
+  /* border:1px solid red; */
+}
+
+.img1 image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+}
+.img2{
+  position: relative;
+  margin: 20rpx auto;
+  width: 60%;
+  height: 0;
+  padding-top: 60%;
+  border-radius:50%;
+  /* border:1px solid red; */
+}
+.img2 image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* border: 1px solid red; */
+}
+.avatar .vs{
+  margin: 14% auto
+}
+.vs .time{
+  font-size: 12px;
+  color: rgb(247, 202, 3);
+}
+.member{
+  text-align: center;
+  color: white;
+  font-size: 16px ;
+  margin: -20rpx auto;
+}
+.topic{
+  /* border:1px solid red; */
+  margin-left: 5%;
+  margin-top: 2%;
+  margin-bottom:3%; 
+  width: 90%;
+  height: 85%;
+  border-radius: 10px;
+  background: white;
+  font-size: 16px
+}
+.title{
+  text-align: center;
+  font-size: 16px;
+  margin-top: 10px
+}
+.content{
+  margin-left: 2%;
+  margin-right: 2% 
+}
+.option-content{
+  display: flex;
+  text-align: center;
+  margin: 2%;
+  height:auto;
+  flex-wrap: wrap;
+}
+.option{
+  padding: 15rpx;
+  width: 50%;
+  flex-wrap: wrap;
+  /* border: 1px solid red; */
+  box-sizing: border-box
+}
+.option .option1{
+  margin: 10rpx;
+  /* border: 1px solid red; */
+  border-radius: 20rpx;
+  background: rgb(247, 245, 245);
+}
+.dare{
+  margin: 5% auto;
+  width: 50%;
+  /* border: 1px solid red; */
+  background: rgba(1, 154, 243, 0.918);
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+}
+.ahead{ 
+  font-size: 16px;
+}
+.zero{
+  font-size: 14px
+}
+
+.nav{
+  display: flex;
+  height: 40px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 40px;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom:0;
+}
+.nav .li{
+  box-sizing: border-box;
+  flex:1
+}
+.nav #analyze{
+  color: black;
+  background: white;
+  font-family:  Microsoft Yahei
+}
+.nav #pay{
+  color: white;
+  background: rgba(1, 154, 243, 0.918);
+}
+
+image{
+ width: 95%;
+ height: 100%;
+}

@@ -1,0 +1,12 @@
+<image src='{{sys_rectangle}}' class='bg'></image>
+<view class="content-item">
+  <view class='titleContainer'>
+    <!-- 倒计时 -->
+
+
+    <view class='title'>得分：<text style='color:red'>{{score}}</text> </view>
+    <button class='btn' bindtap='exchange'>兑换形象课程奖学金</button>
+  </view>
+
+
+</view>

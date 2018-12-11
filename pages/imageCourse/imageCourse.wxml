@@ -1,0 +1,34 @@
+<view class="content-item">
+  <image class="item-image" src='{{sys_background}}'></image>
+  <view class='titleContainer'>
+    <!-- <view class='myAssets1' wx:for='{{classes}}'>
+      <view class='title'>{{item.briefintro}}</view>
+      <view class='balance'>{{item.price}}元</view>
+    </view> -->
+
+
+    <radio-group  bindchange="radioChange">
+      <radio class="myAssets1" wx:for="{{classes}}" wx:key="coursename" value="{{item.courseName}}">
+      <view class="classes">
+        <view class='title'>{{item.courseName}}</view>
+        <view class='balance'>{{item.price/100}}元</view>
+        </view>
+      </radio>
+    </radio-group>
+
+    <view class='btns'>
+      <view class="areaBottom">
+        <view class="dare">
+          <view class="zero" bindtap='awardPay'>奖学金支付</view>
+        </view>
+      </view>
+      <view class="areaBottom">
+        <view class="dare">
+          <view class="zero" bindtap='pay'>支付</view>
+        </view>
+      </view>
+    </view>
+
+  </view>
+
+</view>

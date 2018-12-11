@@ -1,0 +1,29 @@
+<image src='{{sys_rectangle}}' class='bg'></image>
+<view>
+
+  <view class="avatar">
+    <view class="img1">
+      <image src='{{userInfo.avatarUrl}}' mode="widthFix"></image>
+    </view>
+  </view>
+  <view class="member">{{userInfo.nickName}}</view>
+  <view class='coming' bindtap='coming'>直接进入答题</view>
+
+
+  <view class='titleContainer'>
+    <!-- 倒计时 -->
+    <view class='times'>
+      <view class="{{countDownNum >= 10? 'TimeNumber' : 'TimeNumber2'}}">
+        {{countDownNum}}
+      </view>
+      <image class='Time' src='{{sys_Time}}'></image>
+    </view>
+    <view class='knowlege'>
+      <view class='title'>速记知识点</view>
+      <view class='knowlegePoint'>
+        {{remembers}}
+      </view>
+    </view>
+
+  </view>
+</view>

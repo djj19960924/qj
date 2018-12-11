@@ -1,0 +1,3 @@
+<view class='animationSlow' style='animation-duration: {{animationTime}};-webkit-animation-duration: {{animationTime}};'>>
+  <view class="b">我</view>
+</view>

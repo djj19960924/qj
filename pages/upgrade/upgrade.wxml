@@ -1,0 +1,44 @@
+<image src='{{sys_rectangle}}' class='bg'></image>
+<view class="main">
+
+  <view class="areaMid">
+    <view class="topic">
+      <view class="title">
+        第{{index-1}}题/第10题
+      </view>
+      <view class="content">
+        {{question.question}}
+      </view>
+      <view class="option-content">
+        <view class="option" wx:for="{{question.options}}" wx:key="index">
+          <!-- 如果imageurl === ''  -->
+          <view class="option1" wx:if="{{item.imageUrl === ''}}">
+            <button class="{{btnId === index? 'correct' : 'btns'}}" bindtap="humanDx" data-id="{{index}}" data-answer="{{index+1}}">{{item.content}}</button>
+          </view>
+          <!-- 如果答案有图片 -->
+          <view  wx:else>
+            <view class="img2">
+              <image src='{{item.imageUrl}}' mode="widthFix"></image>
+            </view>
+            <view class="option1">
+            <button class="{{btnId === index? 'correct' : 'btns'}}" formType="submit" bindtap="humanDx" data-id="{{index}}" data-answer="{{index+1}}">{{item.content}}</button>
+            </view>
+          </view>
+        </view>
+
+      </view>
+    </view>
+  </view>
+  <view class="areaBottom">
+    <view class="dare">
+      <view class="ahead" bindtap='agin'>上一题</view>
+    </view>
+    <view class="dare">
+      <view class="ahead" bindtap='next'>下一题</view>
+    </view>
+  </view>
+  <view wx:if='{{index==11}}' class='tijiao'>
+    <button class='btn' bindtap='submit'>提交</button>
+  </view>
+
+</view>

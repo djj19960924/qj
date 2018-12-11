@@ -1,0 +1,107 @@
+/* pages/PK/pk.wxss */
+page {
+  margin: 0;
+  padding: 0;
+}
+
+.bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1
+}
+
+.avatar{
+  flex:1;
+}
+.img1{
+  position: relative;
+  margin-top: 50rpx;
+  margin-left: 30rpx;
+  width: 20%;
+  height: 0;
+ 
+  border-radius:50%;
+  /* border:1px solid red; */
+}
+
+.img1 image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  border-radius: 50%;
+}
+.member{
+  position: absolute;
+  margin-left: 200rpx;
+  margin-top: 50rpx;
+  width: 20%;
+  text-align: center;
+  color: white;
+  font-size: 13px ;
+ 
+}
+.coming{
+  color: rgb(247, 202, 3);
+  margin-left: 550rpx;
+  font-size: 30rpx;
+  text-decoration:underline;
+}
+.titleContainer {
+  margin-top: 250rpx;
+  position: absolute;
+  width: 94%;
+  margin-left: 3%;
+  height: 700rpx;
+  border: 1px solid #afa8eb;
+  border-radius: 20rpx;
+  display: flex;
+  flex-direction: column;
+  background: #472572;
+  justify-content: center
+}
+.TimeNumber {
+  position: absolute;
+  margin-left: 280rpx;
+  margin-top: 80rpx;
+  font: 100 100rpx "Comic Sans MS";
+  color: rgb(247, 202, 3);
+  text-shadow: 0 0 20px rgb(247, 202, 3);
+}
+.TimeNumber2 {
+  position: absolute;
+  margin-left: 300rpx;
+  margin-top: 80rpx;
+  font: 100 100rpx "Comic Sans MS";
+  color: rgb(247, 202, 3);
+  text-shadow: 0 0 20px rgb(247, 202, 3);
+}
+
+
+.Time {
+  height: 300rpx;
+  width: 300rpx;
+  margin-left: 190rpx;
+  margin-top: 2rpx;
+}
+.title{
+  font-size: 22px;
+  text-align: center;
+  color: #fff;
+}
+.knowlege {
+  height: 400rpx
+}
+.knowlegePoint {
+  font-size: 13px;
+  text-indent:2em;
+  margin-top: 18rpx;
+  letter-spacing: 5rpx;
+  color: #BDB9B0;
+  padding-left: 5rpx;
+}

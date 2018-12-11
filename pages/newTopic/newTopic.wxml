@@ -1,0 +1,105 @@
+<image src='{{sys_rectangle}}' class='bg'></image>
+
+<view class="main">
+  <view class="areaTop">
+    <view class="first">
+      <view class="avatar">
+        <view class="img1">
+          <image src='{{sys_1}}' mode="widthFix"></image>
+        </view>
+        <view class="member">答题者A</view>
+      </view>
+      <view class="avatar">
+        <view class="vs">
+          <image src='{{sys_vs}}' mode="widthFix"></image>
+          <view class="time">答题倒计时 {{countDownNum}} s</view>
+        </view>
+      </view>
+      <view class="avatar">
+        <view class="img1">
+          <image src='{{sys_1}}' mode="widthFix"></image>
+        </view>
+        <view class="member">答题者B</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="areaMid">
+    <view class="topic">
+      <view class="title">
+        第3题/第10题
+      </view>
+      <view class="content">
+        具体中国传统服饰的基本修行是带有很强的东方文化呢色彩的袖型是：
+      </view>
+      <view class="option-content" wx:if="{{image==0}}">
+        <view class="option">
+          <view class="option1">
+            <button bindtap='change'>圆袖</button>
+          </view>
+        </view>
+        <view class="option">
+          <view class="option1">
+            <button>圆袖</button>
+          </view>
+        </view>
+        <view class="option">
+          <view class="option1">
+            <button>圆袖</button>
+          </view>
+        </view>
+        <view class="option">
+
+          <view class="option1">
+            <button>圆袖</button>
+          </view>
+        </view>
+      </view>
+      <view class="option-content" wx:else>
+        <view class="option">
+          <view class="img2">
+            <image src='{{sys_1}}' mode="widthFix"></image>
+          </view>
+          <view class="option1">
+            <button>圆袖</button>
+          </view>
+        </view>
+        <view class="option">
+          <view class="img2">
+            <image src='{{sys_1}}' mode="widthFix"></image>
+          </view>
+          <view class="option1">
+            <button>圆袖</button>
+          </view>
+        </view>
+        <view class="option">
+          <view class="img2">
+            <image src='{{sys_1}}' mode="widthFix"></image>
+          </view>
+          <view class="option1">
+            <button>圆袖</button>
+          </view>
+        </view>
+        <view class="option">
+          <view class="img2">
+            <image src='{{sys_1}}' mode="widthFix"></image>
+          </view>
+          <view class="option1">
+            <button>圆袖</button>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="areaBottom">
+    <view class="dare">
+      <view class="ahead">继续挑战</view>
+      <view class="zero">失败奖励金归零</view>
+    </view>
+  </view>
+</view>
+
+<view class="nav">
+  <view class="li" id="analyze">答案解析:</view>
+  <view class="li" id="pay" bindtap='pay'>1元支付</view>
+</view>

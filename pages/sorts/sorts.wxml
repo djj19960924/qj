@@ -1,0 +1,90 @@
+<image src='{{sys_rectangle}}' class='bg'></image>
+<view class='main'>
+  <view class='areaTop'>
+    <view class='area1'>
+      <view class='box1'>
+        <!--  等级为新人 0  -->
+        <view class='img1' data-level='0' bindtap='send'>
+          <image src='{{sys_new}}' mode="aspectFill"></image>
+        </view>
+      </view>
+
+      <!-- 等级为见习 1 -->
+      <view class='box2'>
+        <view class='img2' data-level='1' bindtap='send' wx:if="{{level === 1 || level ===2 || level === 3}}">
+          <image src='{{sys_trainee}}' mode="aspectFill"></image>
+        </view>
+        <view class='img2' data-level='1' bindtap='send' wx:else>
+          <image src='{{sys_trainee}}' mode="aspectFill"></image>
+          <image class='lock1' src='{{sys_lock1}}' mode="aspectFill" style="opacity: 0.6;"></image>
+        </view>
+      </view>
+
+      <!-- 等级为高手 2 -->
+      <view class='box3'>
+        <view class='img3' data-level='2' bindtap='send' wx:if="{{level === 2 || level === 3}}">
+          <image src='{{sys_ace}}' mode="aspectFill"></image>
+        </view>
+        <view class='img3' data-level='2' bindtap='send' wx:else>
+          <image src='{{sys_ace}}' mode="aspectFill"></image>
+          <image class='lock1' src='{{sys_lock1}}' mode="aspectFill" style="opacity: 0.6;"></image>
+        </view>
+      </view>
+
+      <!-- 等级为达人 3 -->
+      <view class='box4'>
+        <view class='img4' data-level='3' bindtap='send' wx:if="{{level === 3}}">
+          <image src='{{sys_talent}}' mode="aspectFill"></image>
+        </view>
+        <view class='img4' data-level='3' bindtap='send' wx:else>
+          <image src='{{sys_talent}}' bindtap='send' mode="aspectFill"></image>
+          <image class='lock1' src='{{sys_lock1}}' mode="aspectFill" style="opacity: 0.6;"></image>
+        </view>
+      </view>
+
+      <view class='pk'>
+        <image src='{{sys_pk}}' mode="aspectFill" data-pkType='2' bindtap='pk'></image>
+      </view>
+    </view>
+    <view class='area2'>
+      <view class='box5'>
+        <view class='img5'>
+          <image src='{{sys_tiku}}' mode="aspectFill" bindtap='questionSearch'></image>
+        </view>
+      </view>
+      <view class='box6'>
+        <view class='img6'>
+          <image src='{{sys_rank}}' mode="aspectFill" bindtap='rank'></image>
+        </view>
+      </view>
+      <view class='box7'>
+        <view class='img7'>
+          <image src='{{sys_money}}' mode="aspectFill" bindtap="money"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='areaBottom'>
+    <view class='area3'>
+      <view class='box8'>
+        <view class='img8'>
+          <image src='{{sys_message}}' mode="aspectFill" bindtap='message'></image>
+        </view>
+      </view>
+      <button class='box9' open-type="share">
+        <view class='img9'>
+          <!-- <button open-type="share"> -->
+          <image src='{{sys_share}}' mode="aspectFill" bindtap='share'> </image>
+          <!-- </button> -->
+        </view>
+      </button>
+    </view>
+    <view class='area4'>
+      <view class='box10'>
+        <view class='img10'>
+          <image src='{{sys_course}}' mode="aspectFill" bindtap='imageCourse'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,23 @@
+<view class="content-item">
+  <image class="item-image" src='{{sys_background}}'></image>
+  <view class='titleContainer'>
+    <view class='myAssets1'>
+      <view class='title'>我的余额</view>
+      <view class='balance'>￥80</view>
+    </view>
+
+    <view class='myAssets2'>
+      <view class='title'>我的奖学金 </view>
+      <view class='balance'>￥80</view>
+    </view>
+
+    <view class="areaBottom">
+      <view class="dare">
+        <view class="zero" bindtap='pay'>购买课程</view>
+      </view>
+    </view>
+
+  </view>
+
+
+</view>

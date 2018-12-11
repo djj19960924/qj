@@ -1,0 +1,11 @@
+
+<view class="main">
+  <view class="contain">
+    <button class="top" open-type="getUserInfo" bindgetuserinfo="getUserInfoAuthorization" hover-class="none">
+       <image src="{{sys_qj}}" mode="aspectFill"></image>
+    </button>
+    <button class="bottom" open-type="getUserInfo" bindgetuserinfo="game" hover-class="none">
+      <image src="{{sys_game}}" mode="aspectFill"></image>
+    </button>
+  </view>
+</view>

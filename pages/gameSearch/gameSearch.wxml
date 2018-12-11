@@ -1,0 +1,48 @@
+<image src='{{sys_rectangle}}' class='bg'></image>
+<view class="content-item">
+
+  <!-- <view class='my'> -->
+  <!-- <image class='vs' src='{{sys_background2}}'></image>
+  <image class='vs2' src='{{sys_vs}}'></image>
+  <image class='tiao' src='{{sys_tiao}}'></image>
+
+
+  <image class='A' src='{{sys_challengerA}}'></image>
+  <view style='width:115rpx;height:115rpx;border-radius:50%;background:#76D8FA;position: absolute;margin-left:100rpx;margin-top:135rpx'>
+    <image src='{{userInfo.avatarUrl}}' class='userimage'></image>
+  </view>
+  <view class='nameA'>{{userInfo.nickName}}</view>
+
+  <image class='B' src='{{sys_challengerB}}'></image>
+  <view style='width:115rpx;height:115rpx;border-radius:50%;background:#76D8FA;;position: absolute;margin-left:563rpx;margin-top:135rpx'>
+
+  </view> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- 下面的方框 -->
+  <view class='titleContainer'>
+    <!-- 倒计时 -->
+    <view>
+      <view class="{{countDownNum >= 10? 'TimeNumber' : 'TimeNumber2'}}">
+        {{countDownNum}}
+      </view>
+      <image class='Time' src='{{sys_Time.png}}'></image>
+    </view>
+    <view class='knowlege'>
+      <view class='title'> loading...</view>
+    </view>
+
+  </view>
+</view>

@@ -1,0 +1,71 @@
+
+<image src='{{sys_rectangle}}' class='bg'></image>
+<view class="main">
+  <view class="areaTop">
+    <view class="first">
+      <view class="avatar">
+        <view class="img1">
+          <image src='{{userInfo.avatarUrl}}' mode="widthFix"></image>
+        </view>
+        <view class='vs'>
+          <view class="member">{{userInfo.nickName}}</view>
+          <view class="time">答题倒计时 {{countDownNum}} s</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="areaMid">
+    <view class="topic">
+      <view class="title">
+        第{{index-1}}题/第{{titleNumber}}题
+      </view>
+      <view class="content">
+        {{question.question}}
+      </view>
+      <view class="option-content">
+        <view class="option" wx:for="{{question.options}}" wx:key="index">
+          <!-- 如果imageurl === ''  -->
+          <view class="option1" wx:if="{{item.imageUrl === ''}}">
+
+            <!-- 如果答案正确且 用户答案等于下标 -->
+            <button wx:if="{{human.correctness === 1}}" disabled='{{mouseFlag}}' class="{{userCorrect === index ? 'correct':'btns'}}" formType="submit" bindtap="humanDx" data-id="{{index}}" data-name="{{item}}" type='default'>{{item.content}}</button>
+
+            <!-- 如果答案错误且 用户答案等于下标 -->
+            <button wx:elif="{{human.correctness === 0}}" disabled='{{mouseFlag}}' class="{{userFail === index ? 'fail':'btns'}}" formType="submit" bindtap="humanDx" data-id="{{index}}" data-name="{{item}}" type='default'>{{item.content}}</button>
+
+            <!-- 默认 -->
+            <button wx:else class="btns" formType="submit" disabled='{{allDisabled}}' bindtap="humanDx" data-id="{{index}}" data-name="{{item}}">{{item.content}}</button>
+          </view>
+          <!-- imageUrl !== '' -->
+          <view class="option1" wx:else>
+            <!-- 如果答案正确且 用户答案等于下标 -->
+            <view class="img2">
+              <image src='{{item.imageUrl}}' mode="widthFix"></image>
+            </view>
+
+            <button wx:if="{{human.correctness === 1}}" disabled='{{mouseFlag}}' class="{{userCorrect === index ? 'correct':'btns'}}" formType="submit" bindtap="humanDx" data-id="{{index}}" data-name="{{item}}" type='default'>{{item.content}}</button>
+
+            <!-- 如果答案错误且 用户答案等于下标 -->
+            <button wx:elif="{{human.correctness === 0}}" disabled='{{mouseFlag}}' class="{{userFail === index ? 'fail':'btns'}}" formType="submit" bindtap="humanDx" data-id="{{index}}" data-name="{{item}}" type='default'>{{item.content}}</button>
+            
+            <button wx:else class="btns" formType="submit" disabled='{{allDisabled}}' bindtap="humanDx" data-id="{{index}}" data-name="{{item}}">{{item.content}}</button>
+
+          </view>
+
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="areaBottom">
+    <view class="dare" bindtap='next'>
+      <view class="ahead">下一题</view>
+      <!-- <view class="zero">失败奖励金归零</view> -->
+    </view>
+  </view>
+</view>
+
+<view class="nav">
+  <view class="li" id="analyze">答案解析:</view>
+  <view class="li" id="pay" bindtap='pay'>1元支付</view>
+</view>

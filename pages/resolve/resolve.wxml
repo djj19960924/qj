@@ -1,0 +1,14 @@
+<view class="content-item">
+  <image class="item-image" src='{{sys_background}}'></image>
+  <view class='titleContainer'>
+    <!-- 倒计时 -->
+
+
+    <view class='title'>答案解析</view>
+    <view class='knowlegePoint'>
+      知识点是网络课程中信息传递的基本单元,研究知识点的表示与关联对提高网络课程的学习导航具有重要的作用。比如：“今天我学了如何演讲”这显然不是一个知识点，这是一个知识面，别人看了也
+    </view>
+  </view>
+
+
+</view>

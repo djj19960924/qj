@@ -1,0 +1,36 @@
+<image src='{{sys_rectangle}}' class='bg'></image>
+<view class="main">
+
+  <view class="areaMid">
+    <view class="topic">
+      <view class="title">
+        题目详情
+      </view>
+      <view class="content">
+        {{question.question}}
+      </view>
+      <view class="option-content">
+        <view class="option" wx:for="{{question.options}}" wx:key="index">
+          <!-- 如果imageurl === ''  -->
+          <view class="option1" wx:if="{{item.imageUrl === ''}}">
+            <view>{{item.content}}</view>
+          </view>
+          <!-- 如果答案有图片 -->
+          <view  wx:else>
+            <view class="img2">
+              <image src='{{item.imageUrl}}' mode="widthFix"></image>
+            </view>
+            <view class="option1">
+            <view>{{item.content}}</view>
+            </view>
+          </view>
+
+       
+        </view>
+
+      </view>
+         <view class='answer'>正确答案：{{question.options[question.answer-1].content}}</view>
+    </view>
+  </view>
+
+</view>

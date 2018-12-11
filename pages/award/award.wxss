@@ -1,0 +1,69 @@
+
+page {
+  margin: 0;
+  padding: 0;
+}
+
+.bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1
+}
+.content-item {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.item-image {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.titleContainer {
+  margin-top: 100rpx;
+  position: absolute;
+  width: 94%;
+  margin: auto 3%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 800rpx;
+  border: 1px solid #afa8eb;
+  border-radius: 20rpx;
+  display: flex;
+  flex-direction: column;
+  background: #472572;
+}
+
+.knowlegePoint {
+  font-size: 40rpx;
+  text-indent: 2em;
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 100rpx;
+  letter-spacing: 5rpx;
+  color: white;
+}
+
+.button {
+  margin-top: 250rpx;
+  font-size: 40rpx;
+  width: 70%;
+  height: 100rpx;
+  /* border: 1px solid red; */
+  background: rgba(1, 154, 243, 0.918);
+  border-radius: 10px;
+  color: white;
+}
